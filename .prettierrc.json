@@ -1,3 +1,4 @@
 {
-    "plugins":["prettier-plugin-tailwindcss"]
+  "$schema": "./.vscode/prettierrc.schema.json",
+  "plugins": ["prettier-plugin-tailwindcss"]
 }

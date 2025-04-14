@@ -79,10 +79,6 @@ body {
 .arrow{
   @apply bg-cyan/60 text-white  rounded-full absolute text-2xl -translate-y-[50%] size-[6vw] top-27
 }
-.swiper{
-  /* @apply bg-white  */
-  
-}
 .swiper-slide{
   @apply flex! justify-center  
 }
