@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Agbalumo&family=Gruppo&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playwrite+AU+TAS:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import "tailwindcss";
+@theme {
+  /* screen breaking points */
+
+  --breakpoint-*: initial;
+  --breakpoint-xsm: 320px;
+  --breakpoint-sm: 351px;
+  --breakpoint-md: 768px;
+  --breakpoint-md: 768px;
+
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1536px;
+
+  /* color */
+  --color-magenta: rgb(255, 30, 229);
+  --color-cyan: rgb(0, 188, 255);
+  --color-pink: rgb(251, 100, 182);
+  --color-grayish-blue: rgb(30, 31, 42);
+  --color-gray: rgb(152, 161, 175);
+  --color-dark: rgb(15, 15, 15);
+  --color-black: rgb(0, 0, 0);
+
+  /* progress bar gradient color */
+
+  --color-cerulean:#00bcff;
+  --color-turquoise:#00e4dd;
+  --color-malibu:#00d2f8;
+  --color-oyster:#E1FAFF;
+
+
+
+  /* font weight */
+  --font-weight-sm: 430;
+  --font-weight-nl: 490;
+
+
+  /* font family */
+  --font-inter: "Inter", sans-serif;
+  --font-Gruppo: "Gruppo", sans-serif;
+  --font-Roboto: "Roboto", sans-serif;
+  --font-Poppins: "Poppins", sans-serif;
+  --font-agbalumo: "agbalumo", sans-serif;
+  --font-Playwrite: "Playwrite AU TAS", sans-serif;
+
+  /* shadow */
+  --shadow-navbar: 1px 1px 5px rgb(255, 30, 229);
+  --shadow-mobileNavbar: 0.5px 0.5px 3px rgb(152, 161, 175);
+  --shadow-normal: 0.5px 0.5px 3px rgb(152, 161, 175);
+  --shadow-card: 0.5px 0.5px 3px rgb(0, 188, 255);
+  --shadow-text: 1px 1px 5px rgb(152, 161, 175);
+  --shadow-skill: 0px 0px 5px rgb(255, 255, 255);
+  --shadow-swiper-slide:0 0 10px rgb(0, 188, 255), 0 0 20px rgb(251, 100, 182);
+}
+
+
+
+body {
+  @apply relative mx-[6vw] sm:mx-[7vw] lg:mx-[12vw] my-[3vh]  bg-black ;
+}
+.transition-effect {
+  @apply transition-all duration-300;
+}
+.btn-download {
+  @apply from-magenta via-cyan/90 to-magenta/90   bg-linear-to-r from-0% via-51% to-100%  text-white hover:bg-linear-to-l  transition-all duration-1000;
+}
+.btn {
+  @apply border-cyan  cursor-pointer rounded-xl border-2 px-4 py-[0.63rem] text-[1.1rem] font-semibold  focus:outline-none xsm:text-[0.9rem] text-white;
+}
+
+
+.line-gradient{
+  @apply bg-linear-to-r from-0% from-gray/30 via-gray/80 to-100% to-gray/30
+}
+.progress-gradient{
+  @apply bg-linear-to-b from-0% from-cerulean via-turquoise  to-100% to-malibu
+}
+.arrow{
+  @apply bg-cyan/60 text-white  rounded-full absolute text-2xl -translate-y-[50%] size-[6vw] top-27
+}
+.swiper{
+  /* @apply bg-white  */
+  
+}
+.swiper-slide{
+  @apply flex! justify-center  
+}
+.swiper-pagination-bullet {
+  background-color: red;
+}
+
+
+
+.scrollable {
+  scrollbar-width: thin; 
+  scrollbar-color:rgba(0, 188, 255,0.7) rgb(0, 0, 0) ;
+  
+}
