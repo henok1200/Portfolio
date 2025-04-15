@@ -10,6 +10,12 @@ const AboutPage = () => {
   return (
     <div className=" ">
       <Page page={"About Me"} />
+       <div className="grid-cols-12 justify-center gap-5 md:grid">
+        <div className="col-span-7 flex flex-col">
+          <AboutText />
+        </div>
+        <AboutPicture className="" />
+      </div>
 
       <div className="mt-[13.5vh]">
         <HorizontalLine className="mt" />
